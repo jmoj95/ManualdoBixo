@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MoradiaAddActivity">
+
+    <TextView
+        android:id="@+id/txt_moradia_add_screen_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adicione uma nova Oferta"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:padding="16dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/moradia_add_titulo_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Titulo"
+        app:layout_constraintTop_toBottomOf="@id/txt_moradia_add_screen_title" />
+
+    <EditText
+        android:id="@+id/moradia_add_titulo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/moradia_add_titulo_label" />
+
+    <TextView
+        android:id="@+id/moradia_add_endereco_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Endereco"
+        app:layout_constraintTop_toBottomOf="@id/moradia_add_titulo" />
+
+    <EditText
+        android:id="@+id/moradia_add_endereco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/moradia_add_endereco_label" />
+
+    <TextView
+        android:id="@+id/moradia_add_tipo_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tipo"
+        app:layout_constraintTop_toBottomOf="@id/moradia_add_endereco" />
+
+    <EditText
+        android:id="@+id/moradia_add_tipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/moradia_add_tipo_label" />
+
+    <TextView
+        android:id="@+id/moradia_add_descricao_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Descricao"
+        app:layout_constraintTop_toBottomOf="@id/moradia_add_tipo" />
+
+    <EditText
+        android:id="@+id/moradia_add_descricao"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/moradia_add_descricao_label" />
+
+    <TextView
+        android:id="@+id/moradia_add_preco_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Preco"
+        app:layout_constraintTop_toBottomOf="@id/moradia_add_descricao" />
+
+    <EditText
+        android:id="@+id/moradia_add_preco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/moradia_add_preco_label" />
+
+
+    <TextView
+        android:id="@+id/moradia_add_qtd_quartos_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Qtd. de quartos"
+        app:layout_constraintTop_toBottomOf="@id/moradia_add_preco" />
+
+    <EditText
+        android:id="@+id/moradia_add_qtd_quartos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/moradia_add_qtd_quartos_label" />
+
+    <Button
+        android:id="@+id/btn_moradia_add"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adicionar"
+        app:layout_constraintTop_toBottomOf="@id/moradia_add_qtd_quartos"
+        android:onClick="btnAddMoradiaClick" />
+
+</android.support.constraint.ConstraintLayout>
